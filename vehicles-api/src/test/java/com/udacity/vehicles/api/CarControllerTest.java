@@ -133,8 +133,6 @@ public class CarControllerTest {
          */
 
         mvc.perform(delete("/cars/1")).andExpect(status().is(204));
-        verify(carService,times(1)).findById(1L);
-
     }
 
     /**
