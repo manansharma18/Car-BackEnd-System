@@ -11,7 +11,6 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 import org.springframework.web.reactive.function.client.WebClient;
-//import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 /**
  * Launches a Spring Boot application for the Vehicles API,
  * initializes the car manufacturers in the database,
@@ -19,7 +18,6 @@ import org.springframework.web.reactive.function.client.WebClient;
  */
 @SpringBootApplication
 @EnableJpaAuditing
-@EnableEurekaClient
 public class VehiclesApiApplication {
 
     public static void main(String[] args) {
