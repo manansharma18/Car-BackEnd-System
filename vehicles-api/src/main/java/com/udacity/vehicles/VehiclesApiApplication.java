@@ -50,7 +50,7 @@ public class VehiclesApiApplication {
      * @return created maps endpoint
      */
     @Bean(name="maps")
-    public WebClient webClientMaps(@Value("${maps.endpoint}") String endpoint) {
+    public WebClient webClientMaps(@Value("${http://localhost:9191}") String endpoint) {
         return WebClient.create(endpoint);
     }
 
@@ -60,7 +60,7 @@ public class VehiclesApiApplication {
      * @return created pricing endpoint
      */
     @Bean(name="pricing")
-    public WebClient webClientPricing(@Value("${pricing.endpoint}") String endpoint) {
+    public WebClient webClientPricing(@Value("${http://localhost:8082}") String endpoint) {
         return WebClient.create(endpoint);
     }
 
